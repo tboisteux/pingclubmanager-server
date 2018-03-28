@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>org.pingclubmanager</groupId>
+    <artifactId>pingclubmanager</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+  </parent>
+  <artifactId>pingclubmanager-rest</artifactId>
+  <packaging>war</packaging>
+  <name>pingclubmanager-rest</name>
+  <description>Rest API pingclubmanager</description>
+  
+  <dependencies>
+  	<!-- https://mvnrepository.com/artifact/org.springframework.data/spring-data-rest-webmvc -->
+	<dependency>
+	  <groupId>org.springframework.data</groupId>
+	  <artifactId>spring-data-rest-webmvc</artifactId>
+	</dependency>
+	<dependency>
+	  <groupId>org.springframework</groupId>
+	  <artifactId>spring-context-support</artifactId>
+	</dependency>	
+	<dependency>
+	  <groupId>io.springfox</groupId>
+	  <artifactId>springfox-swagger2</artifactId>
+	</dependency>
+	<dependency>
+	  <groupId>io.springfox</groupId>
+	  <artifactId>springfox-swagger-ui</artifactId>
+	</dependency>
+	<dependency>
+	  <groupId>javax.servlet</groupId>
+	  <artifactId>javax.servlet-api</artifactId>
+	  <scope>provided</scope>
+    </dependency>
+    <dependency>
+	  <groupId>org.apache.tomcat</groupId>
+	  <artifactId>tomcat-catalina</artifactId>
+	  <scope>test</scope>
+	</dependency>
+	<dependency>
+	<groupId>org.springframework.security</groupId>
+	<artifactId>spring-security-web</artifactId>
+  </dependency>
+  <dependency>
+	<groupId>org.springframework.security</groupId>
+	<artifactId>spring-security-config</artifactId>
+  </dependency>
+  <dependency>
+  	<groupId>org.pingclubmanager</groupId>
+  	<artifactId>pingclubmanager-services</artifactId>
+  </dependency>
+ 	<dependency>
+		<groupId>com.jayway.jsonpath</groupId>
+		<artifactId>json-path</artifactId>
+	</dependency>
+	<dependency>
+		<groupId>com.jayway.jsonpath</groupId>
+		<artifactId>json-path-assert</artifactId>
+	</dependency>
+  </dependencies>
+</project>
